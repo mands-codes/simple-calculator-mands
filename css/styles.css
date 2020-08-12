@@ -1,0 +1,79 @@
+/* AUTOR: AMANDA CAROLINE */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+  
+h1{
+    max-width: 350px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin: 40px auto;
+}
+/* Cursor do titulo */
+h1:after{
+    content: '|';
+    margin-left: 4px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.botoes{
+    width:100px;
+    height: 40px;
+}
+
+#visor{
+    width: 400px;
+    height: 50px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.rodape{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+}
+
+
+.fab{
+ font-size: 30px;
+
+}
+
+.itens{
+    display: block;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    grid-template-rows: 1;
+
+}
+
+.modoEscuro{
+background-color: #0e1013;
+}
+
+.modoEscuro h1, .modoEscuro h5{
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 700px){
+  
+    #music,#mute{
+        margin-top: 10px;
+    }
+ 
+}

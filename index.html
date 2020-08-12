@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Amanda Caroline">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- FAVICON --> 
+        <link rel="icon" type="imagem/png" href="assets/calculator.png"/>
+        <!--BOOTSTRAP -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="css/fontawesome/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <!-- STYLES CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itens" aria-controls="itens" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse" id="itens">
+            <div class="itens">
+                    <button id="music" class="btn item">
+                    <i class="fas fa-music"></i>
+                    </button>
+                 <audio src="assets/bip_calculadora.mp3"></audio>
+                    <button id="mute" class="btn item hide"><i class="fas fa-volume-mute"></i></button>
+                     <button id="dark" class="btn item mt-1"><i class="fas fa-moon"></i></button>
+                    <button id="bright" class="btn item mt-1 hide"><i class="far fa-moon"></i></button>
+            </div>
+            </div>
+        </nav>
+        <header>
+             <h1 id="titulo">Calculadora Simples</h1>
+        </header>
+        <section class="container mx-auto" style="width: 500px;">
+            <h6>Pressione os botões para realizar os calculos.</h6>
+            <input type="text" id="visor" readonly>
+                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <button class="btn botoes op" id="pi" value="pi">π</button>
+                        <button class="btn botoes" id="raiz" value="raiz">
+                            <i class="fas fa-square-root-alt"></i>
+                        </button>
+                        <button class="op btn botoes " id="potencia" value="potencia">x²</button>
+                         <button class="btn btn-warning botoes" id="limpar"><i class="fas fa-eraser"></i></button>
+                    </div>
+                    </div>
+                     <div class="row">
+                    <div class="col-md-12 mt-1">
+                        <button class="btn botoes num" value="7">7</button>
+                        <button class="btn botoes num" value="8">8</button>
+                        <button class="btn botoes num" value="9">9</button>
+                        <button class="op btn botoes" value="/">
+                         <i class="fas fa-divide"></i>
+                        </button>
+                        </div>
+                        </div>
+            <div class="row">
+                    <div class="col-md-12 mt-1">
+                        <button class="btn botoes num" value="4">4</button>
+                        <button class="btn botoes num" value="5">5</button>
+                        <button class="btn botoes num" value="6">6</button>
+                       <button class="op btn botoes" value="-"><i class="fas fa-minus"></i></button>
+                    </div>
+             </div>
+                 <div class="row">
+                    <div class="col-md-12 mt-1">
+                        <button class="btn botoes num" value="1">1</button>
+                        <button class="btn botoes num" value="2">2</button>
+                        <button class="btn botoes num" value="3">3</button>
+                       <button class="op btn botoes" value="+"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                   <div class="row">
+                    <div class="col-md-12 mt-1">
+                        <button class="btn botoes num" value="0">0</button>
+                        <button class="btn botoes" id="ponto">.</button>
+                        <button class="btn btn-danger botoes" id="result">
+                            <i class="fas fa-equals"></i>
+                        </button>
+                            <button class="op btn botoes" value="*">
+                           <i class="fas fa-times"></i> 
+                        </button>
+                    </div>
+                </div>
+        </section>
+       <footer>
+           <div class="fixed-bottom rodape">
+               <h5 class="mr-3">Criado por Amanda Caroline</h5>
+               <a href="https://github.com/mands-codes"><i class="fab fa-github mr-3"></i></a>
+               <a href="https://www.linkedin.com/in/amandaalmeidaacsa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+           </div>
+       </footer>
+        <script src="js/calculator.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/effects.js"></script>
+    </body>
+</html>
